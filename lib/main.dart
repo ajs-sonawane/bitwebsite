@@ -690,7 +690,6 @@ class _MyStatelessWidgetState extends State<MyStatelessWidget> {
         Row(
           children: [
             SideWhiteBannerWidget(),
-            // Expanded(child: RipplesAnimation(child: Container())),
             SideRedBannerWidget(
               pgController: controller,
               index: selectedindex,
@@ -698,7 +697,7 @@ class _MyStatelessWidgetState extends State<MyStatelessWidget> {
             Expanded(
               child: PageView(
                 /// [PageView.scrollDirection] defaults to [Axis.horizontal].
-                /// Use [Axis.vertical] to scroll vertically.
+                /// Use [Axis.vertical] to scroll vertically. scroll controller comment
                 scrollDirection: Axis.vertical,
                 controller: controller,
                 children: <Widget>[
